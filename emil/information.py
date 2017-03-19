@@ -1,0 +1,5 @@
+jan = "jan.obernosterer@gmx.at"
+jakob = "jakob.g.maier@hotmail.com"
+jakob2 = "d33pshitter@gmail.com"
+chatbot = "my.automated.chatbot@gmail.com"
+chatbot_password = "automatedchatbot"

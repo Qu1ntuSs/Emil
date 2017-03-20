@@ -1,0 +1,5 @@
+Somehow it works now when i type:
+>>>import emil
+>>>emil.receive_email()
+
+i am not quite sure why this is the case

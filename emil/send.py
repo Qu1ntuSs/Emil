@@ -3,12 +3,9 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import time
 from emil.information import *
-#from information import *
+
 
 def sendmail(subject="Sent by my Bot", text="No Reply", to_adress=jakob2, number_of_emails=1):
-
-	#chatbot = "my.automated.chatbot@gmail.com"
-	#chatbot_password = "automatedchatbot"
 	
 	msg = MIMEMultipart()
 	msg['From'] = chatbot
@@ -30,17 +27,4 @@ def sendmail(subject="Sent by my Bot", text="No Reply", to_adress=jakob2, number
 	server.quit()
 
 	print ("{} email(s) sent to {}".format(number_of_emails, to_adress))
-
-
-
-#sendmail()
-
-
-
-
-
-
-
-
-
 

@@ -5,11 +5,6 @@ import sys
 from io import StringIO
 from email.generator import Generator
 import base64
-#from emil.information import *
-#from information import *
-#import send 
-#from emil.send import sendmail
-#import emil.send
 import emil.send as s
 
 chatbot = "my.automated.chatbot@gmail.com"
@@ -18,18 +13,22 @@ chatbot_password = "automatedchatbot"
 def receive_email(send_reply=False):
 	
 	latest_uid = get_last_email_uid()
+	received_mail = False
+	
 	while True:
 		new_uid = get_last_email_uid()
 		if latest_uid != new_uid:
 			the_email = get_email(new_uid)
 			latest_uid = latest_uid + 1
 			print("You got mail")
-			print(the_email)
+			#print(the_email)
 			#write_to_file(the_email)
 			#got_mail = True
 			if send_reply==True:
 				s.sendmail()
+			received_mail = True
 			time.sleep(5)
+			return received_mail, the_email
 		
 		
 #def write_to_file(email):
@@ -89,6 +88,5 @@ def email_setup():
 	return result, data
 	
 
-	
 
-receive_email(send_reply=True)
+#receive_email(send_reply=True)

@@ -1,9 +1,10 @@
-#from emil.receive import receive_email
-from receive import *
+import emil.send as s
+import emil.receive as r
 
-def Bot():
+def bot():
 
-	receive_email(send_email=True)
+	mail_status, email = r.receive_email(send_reply=True)
+	print(email)
 	
-		
+#bot()		
 

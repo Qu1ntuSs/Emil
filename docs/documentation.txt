@@ -1,5 +1,15 @@
-Somehow it works now when i type:
->>>import emil
->>>emil.receive_email()
+receive:
 
-i am not quite sure why this is the case
+'receive_email()' takes argument default argument 'send_reply=False' if 'send_reply=True' then it will send an email
+
+send:
+
+'sendmail()' takes the arguments 'subject', 'text', 'to_adress' and 'number_of_emails' 
+if none of these are provided it will use default values
+
+bot:
+
+'bot()' takes no arguments at this point
+
+
+

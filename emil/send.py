@@ -2,8 +2,8 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import time
-#from emil.information import *
-from information import *
+from emil.information import *
+#from information import *
 
 def sendmail(subject="Sent by my Bot", text="No Reply", to_adress=jakob2, number_of_emails=1):
 

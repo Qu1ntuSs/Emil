@@ -7,7 +7,10 @@ from email.generator import Generator
 import base64
 #from emil.information import *
 #from information import *
-import send 
+#import send 
+#from emil.send import sendmail
+#import emil.send
+import emil.send as s
 
 chatbot = "my.automated.chatbot@gmail.com"
 chatbot_password = "automatedchatbot"
@@ -25,7 +28,7 @@ def receive_email(send_reply=False):
 			#write_to_file(the_email)
 			#got_mail = True
 			if send_reply==True:
-				send.sendmail()
+				s.sendmail()
 			time.sleep(5)
 		
 		

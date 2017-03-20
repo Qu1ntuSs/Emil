@@ -11,5 +11,7 @@ bot:
 
 'bot()' takes no arguments at this point
 
+Interesting links:
 
+http://blog.magiksys.net/parsing-email-using-python-header
 

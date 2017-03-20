@@ -18,7 +18,7 @@ def receive_email(send_reply=False):
 	while True:
 		new_uid = get_last_email_uid()
 		if latest_uid != new_uid:
-			the_email = get_email(new_uid)
+			the_email, the_raw_email = get_email(new_uid)
 			latest_uid = latest_uid + 1
 			print("You got mail")
 			#print(the_email)
@@ -26,9 +26,12 @@ def receive_email(send_reply=False):
 			#got_mail = True
 			if send_reply==True:
 				s.sendmail()
+			
+				
+			
 			received_mail = True
 			time.sleep(5)
-			return received_mail, the_email
+			return received_mail, the_email, the_raw_email
 		
 		
 #def write_to_file(email):
@@ -54,12 +57,14 @@ def get_email(email_uid):
 	result, data = mail.uid('fetch', latest_email_uid, '(RFC822)')
 	raw_email = data[0][1]
 	clean_email = decode_email(raw_email)
-	return clean_email
+	return clean_email, raw_email
 	
-def get_clean_email(raw_email):
-	c_email = email.message_from_bytes(raw_email)
-	clean_email = c_email.get_payload(decode=True)
-	return clean_email
+#this might be useless
+	
+#def get_clean_email(raw_email):
+#	c_email = email.message_from_bytes(raw_email)
+#	clean_email = c_email.get_payload(decode=True)
+#	return clean_email
 	
 def decode_email(a):
 	b = email.message_from_bytes(a)

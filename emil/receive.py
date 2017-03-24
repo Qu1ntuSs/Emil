@@ -13,7 +13,6 @@ chatbot_password = "automatedchatbot"
 def receive_email(send_reply=False):
 	
 	latest_uid = get_last_email_uid()
-	received_mail = False
 	
 	while True:
 		new_uid = get_last_email_uid()
@@ -21,25 +20,16 @@ def receive_email(send_reply=False):
 			the_email, the_raw_email = get_email(new_uid)
 			latest_uid = latest_uid + 1
 			print("You got mail")
-			#print(the_email)
+			print(the_email)
+			print(the_raw_email)
 			#write_to_file(the_email)
 			#got_mail = True
 			if send_reply==True:
 				s.sendmail()
-			
-				
-			
-			received_mail = True
 			time.sleep(5)
-			return received_mail, the_email, the_raw_email
+			
 		
-		
-#def write_to_file(email):
-#	file = open('mymail.txt', 'a')
-#	text = email.decode("utf-8")
-#	insert_newlines(text)
-#	file.write("-------------------------------------------------------------------------------------" + "\n" + text)
-#	file.close()	
+
 					
 def get_last_email_uid():
 	result, data = email_setup()
@@ -59,12 +49,7 @@ def get_email(email_uid):
 	clean_email = decode_email(raw_email)
 	return clean_email, raw_email
 	
-#this might be useless
-	
-#def get_clean_email(raw_email):
-#	c_email = email.message_from_bytes(raw_email)
-#	clean_email = c_email.get_payload(decode=True)
-#	return clean_email
+
 	
 def decode_email(a):
 	b = email.message_from_bytes(a)
@@ -81,8 +66,6 @@ def decode_email(a):
 		body = b.get_payload(decode=True)
 	return body
 	
-#def insert_newlines(string, every=64):
- #   return '\n'.join(string[i:i+every] for i in range(0, len(string), every))	
 
 def email_setup():
 	mail = imaplib.IMAP4_SSL('imap.gmail.com')

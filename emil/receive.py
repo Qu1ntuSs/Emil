@@ -6,6 +6,7 @@ from io import StringIO
 from email.generator import Generator
 import base64
 import emil.send as s
+import emil.information as i
 
 chatbot = "my.automated.chatbot@gmail.com"
 chatbot_password = "automatedchatbot"

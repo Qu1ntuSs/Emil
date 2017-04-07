@@ -8,8 +8,8 @@ import base64
 import emil.send as s
 import emil.information as i
 
-chatbot = "my.automated.chatbot@gmail.com"
-chatbot_password = "automatedchatbot"
+#chatbot = "my.automated.chatbot@gmail.com"
+#chatbot_password = "automatedchatbot"
 
 def receive_email(send_reply=False):
 	
@@ -40,7 +40,7 @@ def get_last_email_uid():
 	
 def get_email(email_uid):
 	mail = imaplib.IMAP4_SSL('imap.gmail.com')
-	mail.login('my.automated.chatbot@gmail.com', 'automatedchatbot')
+	mail.login(i.chatbot, i.chatbot_password)
 	mail.list()
 	mail.select("inbox")
 	result, data = mail.uid('search', None, "ALL")
@@ -53,6 +53,7 @@ def get_email(email_uid):
 
 	
 def decode_email(a):
+	#b = email.message_from_string(a)
 	b = email.message_from_bytes(a)
 	body = ""
 	if b.is_multipart():
@@ -70,7 +71,7 @@ def decode_email(a):
 
 def email_setup():
 	mail = imaplib.IMAP4_SSL('imap.gmail.com')
-	mail.login('my.automated.chatbot@gmail.com', 'automatedchatbot')
+	mail.login(i.chatbot, i.chatbot_password)
 	mail.list()
 	mail.select("inbox")
 	result, data = mail.uid('search', None, "ALL")

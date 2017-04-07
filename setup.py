@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='emil',
-	  version='1.6.0',
+	  version='1.6.1.3',
 	  description="A type of email bot",
 	  url='https://github.com/Qu1ntuSs/Emil.git',
 	  author='Jakob Maier',

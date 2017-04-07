@@ -1,0 +1,63 @@
+Delivered-To: my.automated.chatbot@gmail.com
+Received: by 10.223.143.39 with SMTP id p36csp463452wrb;
+        Fri, 7 Apr 2017 12:07:45 -0700 (PDT)
+X-Received: by 10.223.143.107 with SMTP id p98mr19701476wrb.3.1491592065404;
+        Fri, 07 Apr 2017 12:07:45 -0700 (PDT)
+Return-Path: <d33pshitter@gmail.com>
+Received: from mail-wm0-x231.google.com (mail-wm0-x231.google.com. [2a00:1450:400c:c09::231])
+        by mx.google.com with ESMTPS id p33si8042730wrc.129.2017.04.07.12.07.45
+        for <my.automated.chatbot@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 07 Apr 2017 12:07:45 -0700 (PDT)
+Received-SPF: pass (google.com: domain of d33pshitter@gmail.com designates 2a00:1450:400c:c09::231 as permitted sender) client-ip=2a00:1450:400c:c09::231;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of d33pshitter@gmail.com designates 2a00:1450:400c:c09::231 as permitted sender) smtp.mailfrom=d33pshitter@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wm0-x231.google.com with SMTP id w64so82877wma.0
+        for <my.automated.chatbot@gmail.com>; Fri, 07 Apr 2017 12:07:45 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=message-id:date:mime-version:from:to:subject;
+        bh=kSnltZpNcguEIYOcuWp4tqB3ePNoBSMr7h4CQ83DlqY=;
+        b=Hjvc/00s0529lDbIjTJyHmG0iNabVW+yYvMiGu5FqTuRVqPfzWxZJQmUxmS0D0MDi4
+         ZUGEUlC1LfOKN95cTkapTjFqBif4ejagHe4sbA6VKvIPHxsHBJhKnXP63pOcjMvDPXk8
+         LIB8dIvoJZEgc5NRLcpaWYN/wKHsPvdSEPXaJyCbrHKsAvFrUjj3HsHCioo1SpVJ66ot
+         gukTEFBzMw6td5Xfb/LnsuixKq3Lm/h8CUR3c3lvS3bNSoE6ZVXLexbP9P0WqYBVPoCV
+         edEtWFZMqKqvdWzExcOlNFeGzvM3VFfiYy2Qzqbd+0cs1i157SoubyX4yv2ANvVWUMJD
+         mvXw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:message-id:date:mime-version:from:to:subject;
+        bh=kSnltZpNcguEIYOcuWp4tqB3ePNoBSMr7h4CQ83DlqY=;
+        b=uhsFJr3u3i6MY5hs+quCFq94hQwdqECbgZF2halEoT5O+nHFNyG9QqmxYRa3c5rRYl
+         iTmfpEChmyk/jN/9uLznZwNtWP3pI1X1QcI1oBjOl8JZO9Pmayt6suQ3LX2XThHU+flZ
+         8LaVfb/PodgIXZGF0ibMaaG0oLNAK0+AHDz+a19CvIIvK8s/tQ0u5ZQv8z/+/bnCtYv9
+         CqcLvMTZOkkCfC/ZFx7QkSsHSpx80iftoR2CLi7zEP1HsGfNFTaKeshorEpI3U8ErwF7
+         DuQJqAab8IEyNwmQ7Q+WZpED8FEJBKcaQ0FhI5epaybhmSc3hyEeQ/7fROVC7isFIVZJ
+         IuCg==
+X-Gm-Message-State: AN3rC/6ygMuylRkzWM1Q4eO+HSuSAVYett40DGgiNniZZtXFIw4wVwO5
+	lWnoFLD7ywVbRfo/
+X-Received: by 10.28.51.67 with SMTP id z64mr736142wmz.22.1491592065015;
+        Fri, 07 Apr 2017 12:07:45 -0700 (PDT)
+Return-Path: <d33pshitter@gmail.com>
+Received: from Jakob-PC.lan ([86.111.49.183])
+        by smtp.gmail.com with ESMTPSA id 51sm7027175wrx.38.2017.04.07.12.07.43
+        for <my.automated.chatbot@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 07 Apr 2017 12:07:43 -0700 (PDT)
+Message-ID: <58e7e37f.b686df0a.f1545.aa24@mx.google.com>
+Date: Fri, 07 Apr 2017 12:07:43 -0700 (PDT)
+Content-Type: multipart/mixed; boundary="===============3892831598201637593=="
+MIME-Version: 1.0
+From: d33pshitter@gmail.com
+To: my.automated.chatbot@gmail.com
+Subject: Sent by my Bot
+
+--===============3892831598201637593==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+I am become death the destroyer of worlds
+--===============3892831598201637593==--
